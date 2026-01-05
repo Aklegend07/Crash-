@@ -27,8 +27,6 @@ blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]
 # To store running processes
 running_processes = []
 
-CREATOR = "This File Is Made By @Not_Akmaster17"  #DON'T CHANGE THIS WARNA ERROR AYEGA 100%
-
 # Async function to run attack command
 async def run_attack_command_on_codespace(target_ip, target_port, duration):
     command = f"./bgmi {target_ip} {target_port} {duration} 1300"
@@ -153,11 +151,6 @@ def process_attack_command(message):
     except Exception as e:
         logging.error(f"Error in processing attack command: {e}")
 
-def verify():
-    current_hash = hashlib.sha256(CREATOR.encode()).hexdigest()
-    if current_hash != Attack:
-        raise Exception("Don't Make Any Changes in The Creators Name.")        
-verify()
 @bot.message_handler(commands=['status'])
 def status_command(message):
     try:
@@ -251,4 +244,4 @@ if __name__ == "__main__":
     # Start the bot
     bot.polling(none_stop=True)
 
-CREATOR = "This File Is Made By @Not_Akmaster17" #DON'T CHANGE THIS WARNA ERROR AYEGA 100%
+
