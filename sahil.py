@@ -1,4 +1,4 @@
-CREATOR = "This File Is Made By @Not_Akmaster17" #DON'T CHANGE THIS WARNA ERROR AYEGA 100%
+
 import hashlib
 import os
 import telebot
@@ -11,12 +11,12 @@ from threading import Thread
 loop = asyncio.get_event_loop()
 
 # Bot token
-TOKEN = '7882486339:AAHQPcNzrljpVtfCE-VPL1cKVapGKThom0Y'
+TOKEN = '8568745290:AAGqsfd7xER1TQ-A4Iyr-l-ZP9Lh_PMvSs0'
 bot = telebot.TeleBot(TOKEN)
 REQUEST_INTERVAL = 1
 
 # Admins list
-ADMIN_IDS = [6140560467]  # Replace with actual admin user IDs
+ADMIN_IDS = [7990440035]  # Replace with actual admin user IDs
 
 # File to store user information
 USERS_FILE = 'users.txt'
@@ -118,7 +118,7 @@ def approve_or_disapprove_user(message):
 
     bot.send_message(chat_id, msg_text, parse_mode='Markdown')
 
-Attack = "fc9dc7b267c90ad8c07501172bc15e0f10b2eb572b088096fb8cc9b196caea97"
+
 @bot.message_handler(commands=['Attack'])
 def attack_command(message):
     user_id = message.from_user.id
@@ -243,5 +243,6 @@ if __name__ == "__main__":
 
     # Start the bot
     bot.polling(none_stop=True)
+
 
 
