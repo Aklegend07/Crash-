@@ -1,2 +1,3 @@
 {'user_id': 6140560467, 'plan': 499, 'valid_until': '2028-06-20', 'access_count': 1}
 {'user_id': 6140560467, 'plan': 499, 'valid_until': '2028-06-20', 'access_count': 2}
+{'user_id': 7990440035, 'plan': 499, 'valid_until': '2027-08-29', 'access_count': 0}
